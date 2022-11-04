@@ -20,7 +20,27 @@ Here you will find the stages in which the project is divided as well as the def
 
 ### Methodology
 
-- Scrum + Kanban board //discrebe the methodology.
+ - Scrumban (Scrum + Kanban)
+
+Scrum is an agile management framework that employs an iterative and incremental approach to optimize predictability and control risk. It combines four formal events within a sprint with a primary focus on transparent planning, inspection of objectives and adaptation of results.
+
+On the other hand Kanban is not a methodology nor a process framework.
+Rather, it is a management method or approach that should be
+applied to an existing process or way of working. There is never
+a question of using Kanban versus a given methodology or
+framework. Rather, it is always adding Kanban using an existing
+methodology, framework, or way of working. Kanban is intended
+to help you manage work better and to improve service
+delivery to the point where you consistently meet customer
+expectations. Kanban is a means to improve what and how you
+already do things. It is not a replacement for what you already
+do.
+
+both are empirical methods that derive partially from lean thinking and continuous improvement and may focus on the process or the product.
+
+Scrumban evolves from Scrum with the addition of Kanban Practices such as Visualization, Limits for Work in Progress, and Workflow Management.
+
+Scrumban combines the best features of Scrum and Kanban methods. It brings together the normative nature of Scrum and the process improvement capability of Kanban, allowing teams to move towards Agile development to constantly improve their processes.
 
 ### Scrum Team
 
