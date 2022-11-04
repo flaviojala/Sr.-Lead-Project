@@ -40,9 +40,10 @@ Here you will find the stages in which the project is divided as well as the def
 
 - The task's name is clear so the team can understand the story at first sight.
 - The task is described from the user's point of view, in the following format:
-  *"As a [**actor**] I want [**action**] so that [**achievement**]"*
+  _"As a [**actor**] I want [**action**] so that [**achievement**]"_
 - Acceptance criteria list about what the task needs to achieve.
 - Task size has been estimaded (Fibonacci)
+- Task is independent (it does not depend on the conclusion of another task)
 
 ### Definition of Done
 
