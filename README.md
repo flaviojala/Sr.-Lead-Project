@@ -9,7 +9,9 @@ Here you will find the stages in which the project is divided as well as the def
 ### Summary
 
 > Methodology
+
 > Scrum Team
+
 > Scrum Events
 
 ### Methodology
