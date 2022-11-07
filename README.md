@@ -36,7 +36,7 @@ expectations. Kanban is a means to improve what and how you
 already do things. It is not a replacement for what you already
 do.
 
-both are empirical methods that derive partially from lean thinking and continuous improvement and may focus on the process or the product.
+Both are empirical methods that derive partially from lean thinking and continuous improvement and may focus on the process or the product.
 
 Scrumban evolves from Scrum with the addition of Kanban Practices such as Visualization, Limits for Work in Progress, and Workflow Management.
 
@@ -64,6 +64,7 @@ Scrumban combines the best features of Scrum and Kanban methods. It brings toget
 - Acceptance criteria list about what the task needs to achieve.
 - Task size has been estimaded (Fibonacci)
 - Task is independent (it does not depend on the conclusion of another task)
+- All Scrum team members has a clearly understanding of the user stories
 
 ### Definition of Done
 
@@ -72,3 +73,8 @@ Scrumban combines the best features of Scrum and Kanban methods. It brings toget
 - Code reviewed
 - Documentation related to the task are updated
 - Acceptance criteria items are met
+
+#### Conclusion
+The work is ready when the requirements are clear and the team has the capability to give an estimation time and garantee that the work can be delived accordingly to the user stories, and is done once everything is completed and we can ship to production. In addition, the criteria on what it means to have the work ready or done can vary from each Product Owner or Sprint.
+
+<img align="center" src="https://media-exp1.licdn.com/dms/image/C5112AQGYdPwuKG4yPw/article-inline_image-shrink_1000_1488/0/1520249448903?e=1672876800&v=beta&t=c82mrrLHU2HAQB4YxAIp5DBHlskfREpHUcpyWPDjORE" width="432"></img>
