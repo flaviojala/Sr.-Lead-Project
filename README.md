@@ -20,6 +20,8 @@ Here you will find the stages in which the project is divided as well as the def
 
 > The C4 model
 
+> Domain Driven Design (DDD)
+
 ### Methodology
 
  - Scrumban (Scrum + Kanban)
@@ -46,35 +48,35 @@ Scrumban combines the best features of Scrum and Kanban methods. It brings toget
 
 ### Scrum Team
 
-- Scrum Master - Rotation between the team
-- Product Owner - Estiven Salinas
+- Scrum Master - Rotation between the team;
+- Product Owner - Estiven Salinas;
 - Developers -
 
 ### Scrum Events
 
-- Two weeks sprints
-- Sprint start mondays - planning
-- Daylies during sprint time - 5 min max for each
-- One day before nobody can push to repository
-- Sprint closing fridays - Demo/Review and Retro
+- Two weeks sprints;
+- Sprint start mondays - planning;
+- Daylies during sprint time - 5 min max for each;
+- One day before nobody can push to repository;
+- Sprint closing fridays - Demo/Review and Retro.
 
 ### Definition of Ready
 
-- The task's name is clear so the team can understand the story at first sight.
+- The task's name is clear so the team can understand the story at first sight;
 - The task is described from the user's point of view, in the following format:
   _"As a [**actor**] I want [**action**] so that [**achievement**]"_
-- Acceptance criteria list about what the task needs to achieve.
-- Task size has been estimaded (Fibonacci)
-- Task is independent (it does not depend on the conclusion of another task)
-- All Scrum team members has a clearly understanding of the user stories
+- Acceptance criteria list about what the task needs to achieve;
+- Task size has been estimaded (Fibonacci);
+- Task is independent (it does not depend on the conclusion of another task);
+- All Scrum team members has a clearly understanding of the user stories.
 
 ### Definition of Done
 
-- Automated tests are passing
-- CI/CD build is passing
-- Code reviewed
-- Documentation related to the task are updated
-- Acceptance criteria items are met
+- Automated tests are passing;
+- CI/CD build is passing;
+- Code reviewed;
+- Documentation related to the task are updated;
+- Acceptance criteria items are met.
 
 #### Conclusion
 The work is ready when the requirements are clear and the team has the capability to give an estimation time and garantee that the work can be delived accordingly to the user stories, and is done once everything is completed and we can ship to production. In addition, the criteria on what it means to have the work ready or done can vary from each Product Owner or Sprint.
@@ -83,6 +85,8 @@ The work is ready when the requirements are clear and the team has the capabilit
 
 ### The C4 model
 
+#### 
+
 - Context diagrams (level 1): show the system in scope and its relationship with users and other systems;
 - Container diagrams (level 2): decompose a system into interrelated containers. A container represents an application or a data store;
 - Component diagrams (level 3): decompose containers into interrelated components, and relate the components to other containers or other systems;
@@ -90,19 +94,29 @@ The work is ready when the requirements are clear and the team has the capabilit
 
 #### For level 1 to 3, the C4 model uses 5 basic diagramming elements: 
 
-- persons (or users);
-- software systems ;
-- containers;
-- components;
-- relationships.
+- Persons (or users);
+- Software systems;
+- Containers;
+- Components;
+- Relationships.
 
 The diagrams are represented in nested boxes, whom make easier to understand the software architheture, specially because they have clean and unambigous labelling for the title and legend on every diagram.
 
 #### Best practices:
 
-- be careful with acronymous;
-- try go create a good layout with visual consistency;
-- titles: remind of write the title of diagrams, always;
-- in the beggining, focus on the elements, not in the design;
-- use solid lines for syncronous relations, and dashed for the asyncronous;
-- use icons to supplement text, not to replace it;
+- Be careful with acronymous;
+- Try go create a good layout with visual consistency;
+- Titles: remind of write the title of diagrams, always;
+- In the beggining, focus on the elements, not in the design;
+- Use solid lines for syncronous relations, and dashed for the asyncronous;
+- Use icons to supplement text, not to replace it.
+
+### Domain Driven Design (DDD)
+
+#### Characteristics:
+
+1. Collaborative (”Business people and developers must work together daily thoughout the project.” - Agile Manifesto);
+2. Based on Modeling;
+3. DDD is incremental;
+4. Fit well with an Agile environment;
+5. Ideal to build microservices.
