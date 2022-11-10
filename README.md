@@ -62,12 +62,12 @@ Scrumban combines the best features of Scrum and Kanban methods. It brings toget
 
 ### Definition of Ready
 
-- The task's name is clear so the team can understand the story at first sight;
-- The task is described from the user's point of view, in the following format:
+- The story's name is clear so the team can understand the story at first sight;
+- The story is described from the user's point of view, in the following format:
   _"As a [**actor**] I want [**action**] so that [**achievement**]"_
-- Acceptance criteria list about what the task needs to achieve;
-- Task size has been estimaded (Fibonacci);
-- Task is independent (it does not depend on the conclusion of another task);
+- Acceptance criteria list about what the story needs to achieve;
+- Story size has been estimaded (Fibonacci);
+- Story is independent (it does not depend on the conclusion of another story);
 - All Scrum team members has a clearly understanding of the user stories.
 
 ### Definition of Done
