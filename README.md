@@ -72,10 +72,10 @@ Scrumban combines the best features of Scrum and Kanban methods. It brings toget
 
 ### Definition of Done
 
+- Unit tests are passing;
 - Automated tests are passing (Not being used so far);
 - CI/CD build is passing;
 - Code reviewed and aproved by at least 2 other members of the squad;
-- Documentation related to the story are updated;
 - Acceptance criteria items are met.
 
 #### Conclusion
