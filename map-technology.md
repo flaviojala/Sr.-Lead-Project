@@ -62,9 +62,56 @@ Unless you're just viewing the default map tiles, getting a focused set of data 
 | Direction/Routes | :white_check_mark: | :white_check_mark: | :white_check_mark:* | :white_check_mark:* | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Distance Matrix | :white_check_mark: | :white_check_mark: | :white_check_mark:* | :white_check_mark:* | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Geocoding | :white_check_mark: | :white_check_mark: | :white_check_mark:* | :white_check_mark:* | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+
 OSM - OpenStreetMaps.
 *with plugins.
 
 for our project, we wanted a technology that was open source, compatible and easy to implement with React (the library chosen for the front-end), among the various services surveyed, according to the table above, the only ones eligible for the project would be OpenLayers and Leaflet both using geographic data provided by OpenStreetMaps.
 
+### About OpenLayers
+
+OpenLayers was developed by MetaCarta as an open source equivalent to Google Maps, and the first version was published in June 2006. OpenLayers is an onling mapping tool that implements a JavaScript API for building rich web-based geographic applications, with an API similar to the Google Maps API. OpenLayers gained a lot of traction very fast, and development in the beginning was rapid. OpenLayers 2 was released only two months after version 1, in August 2006. The library was constantly under development, and new versions with new features were constantly being added. The downside of this rapid progress was that the version 2 library became very big and clunky, eventually reaching 1MB in size and containing over 100,000 lines of code! While it came with a lot of features, not all were needed by regular users.
+
+This was the major reason for a comprehensive rewrite of its library. The goal was to target the latest HTML5 and CSS3 features, with the same functionality from OpenLayers 2, such as support for projections, standard protocols, and editing functionality. The main focus was on performance improvements, lighter builds, prettier visual components, and a better API. This much-improved OpenLayers 3 was published in August 2014.
+
+#### Pros
+
+- Free and open source.
+- Feature-packed library for your mapping needs.
+- Plenty of examples.
+- Support for a range of data types and GIS standards.
+- Built-in support for map projections and editing features.
+
+#### Cons
+
+- Version 3 is still in heavy development, and the API is still changing with every point release.
+- Complicated API syntax.
+- Version 3 documentation is currently not as thorough as it could be.
+
+### About Leaflet
+
+It is safe to say that Leaflet was born as a reaction to OpenLayers’ bloat, clutter and complexity. Vladimir Agafonkin was asked to build a wrapper around OpenLayers, but he instead created a simple and lightweight OpenLayers alternative, and in May 2011 Leaflet was born. Vladimir focused on simplicity, performance and usability for this online map tool. The core library has only basic functionality, which is enough for most real-life use cases. Still, Leaflet can be extended with a huge amount of plugins that are easy to develop and add on top of the core library. Additionally, Leaflet was developed from scratch with mobile support in mind.
+
+Leaflet is easy to use and has a well-documented API, along with simple source code that is available on GitHub. As a result of its focus on performance, usability, simplicity, small size, and mobile support, it is significantly less complicated than OpenLayers.
+
+Leaflet’s future is looking interesting, too. According to Vladimir, he plans for the next major release to be even simpler, improving performances further, and upgrading the plugin infrastructure.
+
+#### Pros
+
+- Free and open source.
+- Small and fast.
+- Simple and easy API syntax.
+- Mobile friendly.
+- Good for getting an online map up quickly and easily.
+- Plenty of examples with very good documentation.
+
+#### Cons
+
+- Lack of advanced functionality
+
+## Conclusion
+
+The disadvantage presented for the leaflet is easily circumvented by adding a plugin to the application. In addition, there is an official library for using a leaflet with react, which facilitates its integration with the project.
+
+For all the arguments presented, the Leaflet framework was the chosen map technology to compose the project.
 
