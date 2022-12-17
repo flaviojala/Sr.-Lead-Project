@@ -11,10 +11,19 @@ Google turned the mapping world upside down when it introduced Google Maps in 20
 Suddenly, to add a nice-looking map to your website, you no longer needed to be a cartographer or GIS expert and online maps became popular.
 
 <img src="https://learn.microsoft.com/en-us/bingmaps/articles/media/5cff54de-5133-4369-8680-52d2723eb756.jpg"
-     alt="Markdown Monster icon"
+     alt="bing map tile system exemple"
+     style="float: left; margin-right: 10px;" />
+Ref: bing map tile system exemple
+
+## Map Data Provider
+
+As mentioned before, early online maps were based on sets of GIS data and their spatial geodatabases. Not many people had access to that data, not to mention its price tag. Google and the OpenStreetMap (OSM) project datasets changed that. Google’s database is private and comes with restrictions, while OSM was inspired by the concept of Wikipedia, as a collaborative project to create a free map of the world. OpenStreetMap is built by a community of volunteer mappers, who contribute to and maintain the spatial data.
+
+<img src="https://postimg.cc/kRnPcf1B"
+     alt="OSM data flow"
      style="float: left; margin-right: 10px;" />
 
-## About OpenStreetMaps
+### About OpenStreetMaps
 
 OpenStreetMap (OSM) is a digital map database of the world built through crowdsourced volunteered geographic information (VGI). OSM is supported by the nonprofit OpenStreetMap Foundation(link is external). The data from OSM is freely available for visualization, query, download, and modification under open licenses(link is external).
 
@@ -24,17 +33,18 @@ OSM originally gained popularity in places where government data was not freely 
 
 OSM volunteer efforts constitute a social event and hobby for many, who gather for group data collection events known as "mapping parties." These activities organized armies of volunteers to walk, bike, and drive through sectors of a city with GPS units and notepads, returning later to a central lab to enter the data (Perkins and Dodge 2008). Although this is still useful in cases, nowadays, many OSM beginners can get pretty far just through tracing aerial photographs in simple browser-based editors. In addition to a physical exploration of the city, mapping parties now offer training, awareness, and renewed enthusiasm of OSM (Hristova et al. 2013).
 
-### Benefits and weaknesses of OSM
+#### Benefits and weaknesses of OSM
 
 OSM is not the only crowdsourced VGI project, but it is one of the most well known. As such, it provides a useful exemplification of the pros and cons of crowdsourcing and VGI.
 
-Some of the main benefits of OSM include:
+##### Some of the main benefits of OSM include
 
 There is no cost to use the data. In some locales, OSM may be the only freely available source of high-resolution GIS vector data. In other places, it may be the only source of data.
 The source data is available for download and use in derived cartographic products. Here OSM differs from the crowdsourcing mechanism that Google Maps deployed, called Map Maker. Cartographers cannot download and re-use Google Map Maker data; whereas OSM is available to anyone with enough technical know-how to get the data.
 Because OSM allows people to add any type of feature, it may include a richer and more socially valuable set of features than commercial or government maps. Possibilities include trees, wheelchair ramps, food banks, spigots for potable water, and so forth.
 OSM data is flexible and can quickly be updated in the event that a new business opens, a bridge gets washed away, etc. In contrast, commercial and government maps tend to be updated on fixed cycles.
-Some of the main challenges of OSM include:
+
+##### Some of the main challenges of OSM include
 
 There is no systematic quality check performed on the data. You use the data at your own risk and should exercise care when using OSM information for mission-critical functions.
 The detail, precision, and accuracy of OSM coverage varies across space, without a simple means of detecting the variation. In the global South, some cities are missing basic street data, let alone other useful features such as parks, schools, and civic buildings. The Missing Maps project, heavily promoted by the American Red Cross, is one organized effort attempting to address this situation.
@@ -42,9 +52,11 @@ OSM is subject to contributor biases. Each contributor must make decisions about
 The OSM community decides the types of features that are worthy of the community tagging system. This is accomplished through a semi-formal proposal and voting process which tends to reflect the interests of the contributors. In 2013, Stephens lamented that there were multiple tags for marking sexual entertainment venues in OSM, whereas proposals for tags denoting hospice services and daytime childcare had floundered. She attributed this directly to the fact that a significant majority of OSM contributors are male. Recent speakers at OSM conferences have raised attention to the consequences of gender and other imbalances in OSM, and have provided suggestions of how to make the OSM community more diverse.
 Unless you're just viewing the default map tiles, getting a focused set of data out of OSM often takes a lot more technical skill than getting the data in. Data ingress and retrieval techniques are covered in the lesson walkthrough and assignment, where you can judge this point for yourself.
 
+## Choosing a Web Mapping Framework
+
 | Technology | Google Maps | Mapbox GL JS | OpenLayers | Leaflet | Bing Maps | Map Quest | HERE Maps | ArcGIS | MapTiler Cloud |
 | ---------- | ----------- | ------------ | ---------- | ------- | --------- | --------- | --------- | ------ | -------------- |
-| Map data Provider | own provider | own provider | OpenStreetMaps | OpenStreetMaps | own provider | own provider | own provider | own provider | own provider |
+| Map data Provider | own provider | own provider | OSM | OSM | own provider | own provider | own provider | own provider | own provider |
 | Open Source? | :no_entry: | :no_entry: | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: | :no_entry: | :no_entry: | :no_entry: |
 | Integration with React? | :white_check_mark: | :white_check_mark: | :no_entry: | :white_check_mark: | :no_entry: | :no_entry: | :no_entry: | :no_entry: | :no_entry: |
 | Official Integration with React? | :white_check_mark: | :white_check_mark: | :no_entry: | :white_check_mark: | :no_entry: | :no_entry: | :no_entry: | :no_entry: | :no_entry: |
@@ -52,6 +64,9 @@ Unless you're just viewing the default map tiles, getting a focused set of data 
 | Direction/Routes | :white_check_mark: | :white_check_mark: | :white_check_mark:* | :white_check_mark:* | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Distance Matrix | :white_check_mark: | :white_check_mark: | :white_check_mark:* | :white_check_mark:* | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Geocoding | :white_check_mark: | :white_check_mark: | :white_check_mark:* | :white_check_mark:* | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+OSM - OpenStreetMaps.
+*with plugins.
 
 for our project, we wanted a technology that was open source, compatible and easy to implement with React (the library chosen for the front-end), among the various services surveyed, according to the table above, the only ones eligible for the project would be OpenLayers and Leaflet both using geographic data provided by OpenStreetMaps.
+
 
