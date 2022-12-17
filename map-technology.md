@@ -19,7 +19,7 @@ Ref: bing map tile system exemple
 
 As mentioned before, early online maps were based on sets of GIS data and their spatial geodatabases. Not many people had access to that data, not to mention its price tag. Google and the OpenStreetMap (OSM) project datasets changed that. Google’s database is private and comes with restrictions, while OSM was inspired by the concept of Wikipedia, as a collaborative project to create a free map of the world. OpenStreetMap is built by a community of volunteer mappers, who contribute to and maintain the spatial data.
 
-[osm-data-flow.jpg](https://postimg.cc/kRnPcf1B)
+[![osm-data-flow.jpg](https://i.postimg.cc/L5P4mWjB/osm-data-flow.jpg)](https://postimg.cc/kRnPcf1B)
 
 ### About OpenStreetMaps
 
