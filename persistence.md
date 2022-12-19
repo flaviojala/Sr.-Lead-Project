@@ -94,7 +94,7 @@ As much as the project at the current level supports a SQL database, analyzing t
 ## Why MongoDB
 
 | Key Features | MongoDB | Amazon DynamoDB | Azure CosmosDB | Apache Cassandra |
-| ------------ | ------- | --------------- | -------------- | ---------------- |
+| ------------ | :-----: | :-------------: | :------------: | :--------------: |
 | Open Source | :white_check_mark: | :no_entry: | :no_entry: | :white_check_mark: |
 | Free Account | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | No Cred Card needed | :white_check_mark: | :no_entry: | :no_entry: | :white_check_mark: |
