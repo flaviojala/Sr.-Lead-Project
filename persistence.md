@@ -8,6 +8,12 @@ Relational databases have been a mainstream technology for decades. They are mat
 
 Non-SQL Databases refer to high performance non-relational data stores. They excel in their ease of use, scalability, resiliency, and availability characteristics. Rather than joining tables of normalized data, NoSQL stores unstructured or semi-structured data, often in key-value pairs or JSON documents. Non-SQL databases typically do not provide ACID guarantees beyond the scope of a single database partition. High-volume services that require sub-second response time favor NoSQL datastores.
 
+NoSQL databases include several different models for accessing and managing data, each suited to specific use cases. Figure below shows four common models.
+
+<img src="https://learn.microsoft.com/pt-br/dotnet/architecture/cloud-native/media/types-of-nosql-datastores.png"
+     alt="CAP's theorem"
+     style="float: left; margin-right: 10px;" />
+
 ## The CAP's Theorem
 
 As a way to understand the differences between these types of databases, consider the CAP theorem, a set of principles applied to distributed systems that store state. Figure below shows the three properties of the CAP theorem.
@@ -58,7 +64,7 @@ High availability and massive scalability are often more business critical than 
 
 - Data is typically replicated across geographies and requires finer control over consistency, availability, and performance
 
-Your application will be deployed on commodity hardware such as with public clouds
+- Your application will be deployed on commodity hardware such as with public clouds
 
 ### Consider a relational database when
 
@@ -73,3 +79,14 @@ Your application will be deployed on commodity hardware such as with public clou
 - Data is typically centralized or can be replicated asynchronously
 
 - Your application will be deployed on large, high-end hardware
+
+| Feature | NoSQL | SQL |
+|---------|-------|-----|
+| Performance | faster | ${\color{red}Slower}$ |
+| Reliability | worst | better |
+| Availability | good | good |
+| Consistency | worst | better |
+| Data Storage | Optimized for huge data | Medium size to large |
+| Scalability | High | High (but more expensive) |
+
+As much as the project at the current level supports a SQL database, analyzing these differences the team opted for a non-relational database as an opportunity to learn more about NoSQL and to allow better horizontal scalability if needed in the future.
