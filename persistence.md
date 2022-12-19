@@ -82,11 +82,11 @@ High availability and massive scalability are often more business critical than 
 
 | Feature | NoSQL | SQL |
 |---------|-------|-----|
-| Performance | faster | ${\color{red}Slower}$ |
-| Reliability | worst | better |
-| Availability | good | good |
-| Consistency | worst | better |
-| Data Storage | Optimized for huge data | Medium size to large |
-| Scalability | High | High (but more expensive) |
+| Performance | ${\color{green}FASTER}$ | ${\color{red}SLOWER}$ |
+| Reliability | ${\color{red}WORST}$ | ${\color{green}BETTER}$ |
+| Availability | ${\color{green}GOOD}$ | ${\color{green}GOOD}$ |
+| Consistency | ${\color{red}WORST}$ | ${\color{green}BETTER}$ |
+| Data Storage | ${\color{green}Optimized for huge data}$ | ${\color{orange}Medium size to large}$ |
+| Scalability | ${\color{green}HIGH}$ | ${\color{orange}HIGH (but more expensive)}$ |
 
 As much as the project at the current level supports a SQL database, analyzing these differences the team opted for a non-relational database as an opportunity to learn more about NoSQL and to allow better horizontal scalability if needed in the future.
