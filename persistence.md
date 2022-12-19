@@ -82,7 +82,7 @@ High availability and massive scalability are often more business critical than 
 
 | Feature | NoSQL | SQL |
 |---------|-------|-----|
-| Performance | faster | {\color{red}Slower} |
+| Performance | faster | ${\color{red}Slower} |
 | Reliability | worst | better |
 | Availability | good | good |
 | Consistency | worst | better |
