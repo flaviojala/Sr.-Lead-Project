@@ -90,3 +90,21 @@ High availability and massive scalability are often more business critical than 
 | Scalability | ${\color{green}HIGH}$ | ${\color{orange}HIGH}$ (but more expensive) |
 
 As much as the project at the current level supports a SQL database, analyzing these differences the team opted for a non-relational database as an opportunity to learn more about NoSQL and to allow better horizontal scalability if needed in the future.
+
+## Why MongoDB
+
+| Key Features | MongoDB | Amazon DynamoDB | Azure CosmosDB | Apache Cassandra |
+| ------------ | ------- | --------------- | -------------- | ---------------- |
+| Open Source | :white_check_mark: | :no_entry: | :no_entry: | :white_check_mark: |
+| Free Account | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| No Cred Card needed | :white_check_mark: | :no_entry: | :no_entry: | :white_check_mark: |
+| Cloud Based | :white_check_mark: | :white_check_mark: | :white_check_mark: | :no_entry: |
+| Acess Controls/Permissions | :white_check_mark: | :white_check_mark: | :white_check_mark: | :no_entry: |
+| Backup and Recovery | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
+| Data Migration | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
+| Data Replication | :white_check_mark: | :white_check_mark: | :no_entry: | :white_check_mark: |
+| Data Storage Management | :white_check_mark: | :white_check_mark: | :white_check_mark: | :no_entry: |
+| Data Virtualization | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
+| C# Supported | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Performance Analysis | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
+| Secure Data Storage | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
