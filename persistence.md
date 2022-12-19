@@ -108,3 +108,15 @@ As much as the project at the current level supports a SQL database, analyzing t
 | C# Supported | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Performance Analysis | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
 | Secure Data Storage | :white_check_mark: | :white_check_mark: | :no_entry: | :no_entry: |
+
+MongoDB became very popular, especially as a cloud database, because it enables developers to build applications faster, handle highly diverse data types, and manage applications more efficiently at scale.
+
+Development is simplified as MongoDB documents map naturally to modern, object-oriented programming languages. Using MongoDB removes the complex object-relational mapping (ORM) layer that translates objects in code to relational tables. MongoDB’s flexible data model also means that your database schema can evolve with business requirements.
+
+## Conclusion
+
+Non-relational databases provide a flexible data model with the ability to easily store and combine data of any structure without the need to modify a schema that promotes scalability and flexibility to meet ever-changing business requirements.
+
+In addition, NoSQL generally has better performance and scalability, which is a key point for an application with maps that has the potential to serve globally.
+
+The team opted for MongoDB Atlas for the ease of hosting, as the service is already available online and is free for the amount of data we need.
